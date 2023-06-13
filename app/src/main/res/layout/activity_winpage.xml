@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Winpage_Activity"
+    android:background="@drawable/background_firstpaze">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Puzzle 1 completed"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:id="@+id/puzzlescompleted"/>
+
+    <ImageView
+        android:id="@+id/trophy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/trophy"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:foregroundGravity="center"
+        android:layout_below="@+id/puzzlescompleted"/>
+
+    <Button
+        android:id="@+id/wincontinewbutton"
+        android:layout_width="@dimen/_185sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_below="@+id/trophy"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/button_winpage"
+        android:text="ℂ𝕠𝕟𝕥𝕚𝕟𝕦𝕖"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:layout_width="@dimen/_185sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:id="@+id/mainmenu"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="80dp"
+        android:text="𝕄𝕒𝕚𝕟 𝕄𝕖𝕟𝕦"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_below="@+id/wincontinewbutton"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"
+        android:background="@drawable/button_winpage"/>
+    <Button
+        android:layout_width="@dimen/_185sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:id="@+id/buypro"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_60sdp"
+        android:text="𝔹𝕦𝕪 ℙ𝕣𝕠"
+        android:textSize="@dimen/_30sdp"
+        android:layout_below="@+id/mainmenu"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"
+        android:background="@drawable/button_winpage"/>
+</RelativeLayout>
